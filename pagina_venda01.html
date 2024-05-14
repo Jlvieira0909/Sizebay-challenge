@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Off White</title>
+    <link rel="icon" type="image/x-icon" href="./images/Color-blackwhite.png">
+</head>
+<body>
+    <div class="Navbar">
+        <a href="./menu.html">
+            <img class="Menu-logo" src="./images/Menu-logo.png">
+        </a>
+    </div>
+    <div class="Product-page">
+        <div class="Product-container">
+            <div class="Product-images">
+                <div class="mySlides fade">
+                    <img src="./images/Pants01.jpg" style="width:1000px">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/Pants02.jpg" style="width:1000px">
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="./images/Pants03.jpg" style="width:1000px">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/Pants04.jpg" style="width:1000px">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/Pants05.jpg" style="width:1000px">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    }   
+            </script>
+            <div class="Product-info">
+                <h1 class="Product-name">Calça Esportiva de Couro</h1>
+                <h2 class="Product-price">1.795,00 R$</h2>
+                <p class="Product-description">Calça esportiva forrada apresenta ajuste regular e cordão torcido. 100% Couro. </p>
+                <h3 class="Colors-label">Cores disponíveis:</h3>
+                <div class="Product-colors">
+                    <img class="Product-color-icon" src="./images/Color-blackwhite.png">
+                </div>
+                <h3 class="Sizes-label">Tamanhos disponíveis:</h3>
+                <div class="Product-sizes">
+                    <h2 class="Size-selector">46</h2>
+                    <h2 class="Size-selector">48</h2>
+                    <h2 class="Size-selector">50</h2>
+                    <h2 class="Size-selector">52</h2>
+                    <h2 class="Size-selector">54</h2>
+                </div>
+                <div class="Buttons-container">
+                    <a class="Product-button" href="https://vfr-v3-production.sizebay.technology/V4/?mode=vfr&id=6834318&sid=0268AE364B4D212 971b52ba1410399862e3e7bfe2f30&lang=br&tenantId=1039&backdropWidth=1920&backdropHe ight=970 ">Provador Virtual</a>
+                    <a class="Product-button" href="https://vfr-v3-production.sizebay.technology/V4/?mode=chart&id=6834318&sid=0268AE364B4D21 2971b52ba1410399862e3e7bfe2f30&lang=br&tenantId=1039&backdropWidth=1920&backdropH eight=970">Tabela De Medidas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="Recommendations-label">Você pode gostar de:</h1>
+    <div class="Other-products">
+        <a class="Recommendation-link" href="./pagina_venda.html">
+            <img src="./images/Jacket01.jpg" class="Recommendation-img"> 
+            <h2 class="Recommendation-Name">Jaqueta Colegial de Couro</h2>
+        </a>
+        <a class="Recommendation-link" href="./pagina_venda02.html">
+            <img src="./images/Shirt01.jpg" class="Recommendation-img"> 
+            <h2 class="Recommendation-Name">Camiseta Ow 23 Skate S/S</h2>
+        </a>
+        <a class="Recommendation-link" href="./pagina_venda03.html">
+            <img src="./images/Sneakers01.jpg" class="Recommendation-img"> 
+            <h2 class="Recommendation-Name">Tênis Out Of Office Contrast Stitching</h2>
+        </a>
+    </div>
+    <div class="Footer">
+        <a href="https://www.sizebay.com/pt/" target="_blank">
+            <img class="Sizebay-icon" src="./images/Sizebay-icon.jpg">
+        </a>
+        <a href="https://www.sizebay.com/pt/" target="_blank">
+            <img class="Sizebay-logo" src="./images/Sizebay-logo.png">
+        </a>
+        <a href="https://www.instagram.com/sizebay/" target="_blank">
+            <img class="Insta-icon" src="./images/Insta-logo.png">
+        </a>
+    </div>
+</body>
+</html>
+
+
