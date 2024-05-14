@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .body{
+    background: #F3F3F3;
+  }
+
+  .Navbar{
+    background: #f8fafc;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Menu-logo{
+    height: 50px;
+    width: 210px;
+    padding: 8px;
+  }
+
+  .Product-page{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Product-container{
+    background: #F3F3F3;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Product-images{
+    background: #F3F3F3;
+    height: auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Product-info{
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .Product-name{
+    width: 90%;
+    font-size: 4rem;
+    padding-top: 120px;
+    padding-left: 32px;
+  }
+
+  .Product-price{
+    font-size: 2.5rem;
+    padding-top: 32px;
+    padding-left: 32px;
+  }
+
+  .Product-description{
+    font-size: 1.2rem;
+    padding-left: 32px;
+    padding-top: 16px;
+    width: 90%;
+  }
+
+  .Colors-label{
+    padding-left: 32px;
+    padding-top: 32px;
+  }
+
+  .Product-colors{
+    padding-left: 32px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+  }
+
+  .Product-color-icon{
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+  }
+
+  .Sizes-label{
+    padding-left: 32px;
+    padding-top: 32px;
+  }
+
+  .Product-sizes{
+    cursor: pointer;
+    padding-left: 32px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    justify-content: space-between;
+  }
+
+  .Size-selector{
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    padding: 8px;
+    background-color: #fafafa;
+  }
+
+  .Size-selector:hover{
+    padding: 8px;
+    background-color: #000000;
+    color: #fafafa ;
+  }
+
+  .Buttons-container{
+    padding-left: 32px;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    justify-content: space-between;
+  }
+
+  .Product-button{
+    background-color:#fafafa ;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 20px;
+    color:#000000;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+  }
+
+  .Product-button:hover{
+    background-color:#000000 ;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 20px;
+    color:#fafafa;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #525252;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    background-color: rgba(0,0,0,0.8);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .Recommendations-label{
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+  }
+
+  .Other-products{
+    padding-top: 32px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .Recommendation-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .Recommendation-img{
+    width: 400px;
+    height: 500px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+  }
+
+  .Recommendation-Name{
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Footer{
+    background: #f8fafc;
+    height: 150px;
+    width: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Sizebay-icon{
+    height: 80px;
+    width: 80px;
+    border-radius: 8px;
+    border-style: none;
+  }
+
+  .Sizebay-logo{
+    height: 100px;
+    width: 300px;
+    padding: 8px;
+  }
+
+  .Insta-icon{
+    height: 80px;
+    width: 80px;
+  }
+
+  .Menu-title{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+  }
+  
+  @media only screen and (max-width: 1700px) {
+    .Product-container{
+      background: #F3F3F3;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .prev, .next {
+      background-color: rgba(0, 0, 0, 0.8);
+      cursor: pointer;
+      position: absolute;
+      top: 35%;
+      width: 60px;
+      margin-top: -22px;
+      margin-right: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 48px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .Product-info{
+      background: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-bottom: 32px;
+      width: 100%;
+    }
+
+    .Product-name{
+      width: 100%;
+      font-size: 4rem;
+      padding-top: 48px;
+      padding-left: 32px;
+    }
+
+    .Product-price{
+      font-size: 2.5rem;
+      padding-top: 32px;
+      padding-left: 32px;
+      width: 100%;
+    }
+
+    .Colors-label{
+      padding-left: 32px;
+      padding-top: 32px;
+      width: 100%;
+      font-size: 32px;
+    }
+
+    .Product-colors{
+      padding-left: 32px;
+      padding-top: 8px;
+      display: flex;
+      flex-direction: row;
+      width: 300px;
+      justify-content: space-between;
+    }
+  
+    .Product-color-icon{
+      width: 80px;
+      height: 80px;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #000000;
+    }
+
+    .Sizes-label{
+      padding-left: 32px;
+      padding-top: 32px;
+      font-size: 32px;
+      width: 100%;
+    }
+
+    .Product-sizes{
+      padding-left: 32px;
+      padding-top: 8px;
+      display: flex;
+      flex-direction: row;
+      width: 500px;
+      justify-content: space-between;
+    }
+  
+    .Size-selector{
+      display: flex;
+      justify-content: center;
+      width: 80px;
+      padding: 8px;
+      background-color: #fafafa;
+      font-size: 48px;
+    }
+
+    .Buttons-container{
+      padding-left: 0px;
+      padding-top: 32px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-evenly;
+    }
+  
+    .Product-button{
+      background-color:#fafafa ;
+      text-decoration: none;
+      font-size: 2rem;
+      padding: 20px;
+      color:#000000;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #000000;
+    }
+
+    .Recommendations-label{
+      display: flex;
+      justify-content: center;
+      padding-top: 24px;
+      font-size: 48px;
+    }
+
+    .Other-products{
+      padding-top: 32px;
+      padding-bottom: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .Recommendation-link{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #000000;
+      padding-bottom: 32px;
+    }
+  }
